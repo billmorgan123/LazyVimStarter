@@ -13,6 +13,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   end
 end
 vim.opt.rtp:prepend(lazypath)
+vim.opt.guicursor = "n-v-i-c:bloack"
 
 require("lazy").setup({
   spec = {
